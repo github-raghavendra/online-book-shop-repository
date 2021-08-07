@@ -20,7 +20,6 @@
 <body>
 
 	<div th:fragment="navbar">
-
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
@@ -87,15 +86,6 @@
 
 						<li sec:authorize="!isAuthenticated()"><a th:href="@{/login}"><span
 								class="glyphicon glyphicon-log-in"></span> Login</a></li>
-
-
-
-						<li sec:authorize="isAuthenticated()">
-							<form action="/logout" method="post">
-								<button type="submit" class="glyphicon glyphicon-log-out">Logout</button>
-							</form>
-						</li>
-
 
 					</ul>
 
